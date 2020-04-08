@@ -6,6 +6,7 @@
 # Ref: redirecting print output to file https://realpython.com/python-print/#printing-to-a-file
 
 import pandas as pd
+import matplotlib.pyplot as plt
 
 #read Iris.Data csv file into pandas datframe
 col_names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
@@ -27,3 +28,34 @@ with open('summary.txt', mode='w') as file_summary :
     # select only the wrong with Iris-versicolor species
     print('Summary statistics: Iris-versicolor', file =file_summary)
     print(iris_df[iris_df['species'] == 'Iris-versicolor'].describe(), file = file_summary)
+    
+# plt histograms of each data and save as png
+fig = plt.figure()
+plt.hist(iris_df['sepal_length'])
+plt.xlabel('sepal length')
+plt.ylabel('Frequency')
+plt.savefig('sepal_length_hist.png')
+
+fig = plt.figure()
+plt.hist(iris_df['sepal_width'])
+plt.xlabel('sepal width')
+plt.ylabel('Frequency')
+plt.savefig('sepal_width_hist.png')
+
+fig = plt.figure()
+plt.hist(iris_df['petal_length'])
+plt.xlabel('petal length')
+plt.ylabel('Frequency')
+plt.savefig('petal_length_hist.png')
+
+fig = plt.figure()
+plt.hist(iris_df['petal_width'])
+plt.xlabel('petal width')
+plt.ylabel('Frequency')
+plt.savefig('petal_width_hist.png')
+
+fig = plt.figure()
+plt.hist(iris_df['petal_width'])
+plt.xlabel('petal width')
+plt.ylabel('Frequency')
+plt.savefig('petal_width_hist.png')
