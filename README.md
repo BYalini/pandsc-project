@@ -17,5 +17,14 @@ This python script will save the following files to the current working director
 - Save histogram of each variable as png files
 - Save scatter plots of each pair of variables
 
+**Histograms using matplotlib** <br>
+matplotlib library is used to produce the below histograms of each variable. Normally one would expect see a nearly normal distributions for samples such as length and width. However the historgrams do not resemble a Gaussian distribution. This is becuase the sample measurements are taken from 3 different species with non identical mean and standard deviation (see summary.txt)<br>
+
+<img src="petal_length_hist.png" alt="histogram petal length" width="50%"><img src="petal_width_hist.png" alt="histogram petal width" width="50%">
+
+<img src="sepal_length_hist.png" alt="histogram sepal length" width="50%"><img src="sepal_width_hist.png" alt="histogram sepal width" width="50%">
+
+
+
 
 
