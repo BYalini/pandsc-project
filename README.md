@@ -25,7 +25,7 @@ matplotlib library is used to produce the below histograms of each variable. Nor
 <img src="sepal_length_hist.png" alt="histogram sepal length" width="50%"><img src="sepal_width_hist.png" alt="histogram sepal width" width="50%">
 
 **Histograms using seaborn** <br>
-The seaborn library has a neat feature that allows to plot the distinct species using different colors so distribution of each species is presented nicely. <br>
+The seaborn library has a neat feature that allows to plot the distinct species using different colors so distribution of each species is presented nicely. These figures illustrade the distribution of the features are nearly normally distributed for each species of Iris<br>
 <img src="petal_length_snshist.png" alt="histogram petal length" width="50%"><img src="petal_width_snshist.png" alt="histogram petal width" width="50%">
 
 <img src="sepal_length_snshist.png" alt="histogram sepal length" width="50%"><img src="sepal_width_snshist.png" alt="histogram sepal width" width="50%">
