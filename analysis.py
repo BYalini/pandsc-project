@@ -6,6 +6,7 @@
 # Ref: redirecting print output to file https://realpython.com/python-print/#printing-to-a-file
 # Ref : https://seaborn.pydata.org/tutorial/distributions.html
 # Ref : https://seaborn.pydata.org/generated/seaborn.FacetGrid.html
+# Ref : https://seaborn.pydata.org/generated/seaborn.pairplot.html
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -108,3 +109,8 @@ fig.savefig('sepal_width_vs_petal_width.png')
 
 fig = sns.FacetGrid(iris_df,hue='species',height=5).map(plt.scatter,'petal_length','petal_width').add_legend()
 fig.savefig('petal_length_vs_petal_width.png')
+
+# Pair plot gives all possible combinations of x and y as scatter plot and histogram in one image
+# sns.pairplot(iris_df, hue='species')
+fig = sns.pairplot(iris_df, hue='species', diag_kind = 'hist', markers=['o', 's', 'D'])
+fig.savefig('hist_and_scatter.png')
