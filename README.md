@@ -30,4 +30,12 @@ The seaborn library has a neat feature that allows to plot the distinct species 
 
 <img src="sepal_length_snshist.png" alt="histogram sepal length" width="50%"><img src="sepal_width_snshist.png" alt="histogram sepal width" width="50%">
 
+**Scatter plots of each pair** <br>
+Because there are 4 variables, 6 scatter plots were generated to illustrate the bivariate relationship between each pair. Similar to histograms above, the Seaborn library was used to differentiate the scatter by species. 
+
+<img src="petal_length_vs_petal_width.png" alt="petal length vs petal width" width="50%"><img src="sepal_length_vs_petal_length.png" alt="petal length vs sepal length" width="50%">
+
+<img src="sepal_length_vs_petal_width.png" alt="sepal length vs petal width" width="50%"><img src="sepal_length_vs_sepal_width.png" alt="sepal length vs sepal width" width="50%">
+
+<img src="sepal_width_vs_petal_length.png" alt="sepal width vs petal length" width="50%"><img src="sepal_width_vs_petal_width.png" alt="sepal width vs petal width" width="50%">
 
