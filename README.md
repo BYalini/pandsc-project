@@ -44,7 +44,7 @@ Pairplot function in the seaborn package combines pariwise scatter plots and his
 <img src="hist_and_scatter.png" alt="pair plot" >
 
 **Examples of classification problems using Iris dataset** <br>
-Iris data set is widely used as test case for many classification machine learning algorithms. 
+Iris data set is widely used as a test case for many classification machine learning algorithms. 
 
-Kaggle, an online community of data scientists and machine learning practitioners, lists 5 potential classification techniques (Support vector machine, K-nearest neighbors, extreme gradient boost, decision tree and Random Forest) to identify Iris flowers.
+Kaggle, an online community of data scientists and machine learning practitioners, lists 5 potential classification techniques (Support vector machine, K-nearest neighbors, extreme gradient boost, decision tree and Random Forest) to identify Iris flowers from the four features listed above.
 https://www.kaggle.com/aceccon/2-iris-dataset-basic-classification-algorithms
