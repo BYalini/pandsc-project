@@ -39,7 +39,7 @@ Because there are 4 variables, 6 scatter plots were generated to illustrate the 
 
 <img src="sepal_width_vs_petal_length.png" alt="sepal width vs petal length" width="50%"><img src="sepal_width_vs_petal_width.png" alt="sepal width vs petal width" width="50%">
 
-**Histogram and Scatter in a single plot**
+**Histogram and Scatter in a single plot** <br>
 Pairplot function in the seaborn package combines pariwise scatter plots and histograms in the same figure. 
 <img src="hist_and_scatter.png" alt="pair plot" >
 
