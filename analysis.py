@@ -42,7 +42,7 @@ plt.savefig('sepal_length_hist.png')
 
 fig = plt.figure()
 plt.hist(iris_df['sepal_width'])
-plt.xlabel('sepal width')
+plt.xlabel('sepal width in cm')
 plt.ylabel('Frequency')
 plt.savefig('sepal_width_hist.png')
 
