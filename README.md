@@ -8,7 +8,7 @@ Petal width. This dataset is well known and commonly used as a typical test case
 machine learning classification problems.
 
 **Data source** <br>
-Iris data set was downloaded from UCI machine learning database (https://archive.ics.uci.edu/ml/machine-learning-databases/iris/) . The file 'Iris'data' is a comma separted flat file (csv). The corresponding column names are mentioned in the text file iris.names. These are sepal length in cm, sepal width in cm, petal length in cm, petal width in cm and species. 
+Iris data set was downloaded from UCI machine learning database (https://archive.ics.uci.edu/ml/machine-learning-databases/iris/) . The file 'Iris data' is a comma separted flat file (csv). The corresponding column names are mentioned in the text file iris.names. These are sepal length in cm, sepal width in cm, petal length in cm, petal width in cm and species. 
 
 **Running the script and output files** <br>
 From command prompt run *“python analysis.py”*. <br>
