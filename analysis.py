@@ -36,7 +36,7 @@ with open('summary.txt', mode='w') as file_summary :
 # plt histograms of each data and save as png
 fig = plt.figure()
 plt.hist(iris_df['sepal_length'])
-plt.xlabel('sepal length')
+plt.xlabel('sepal length in cm')
 plt.ylabel('Frequency')
 plt.savefig('sepal_length_hist.png')
 
@@ -48,52 +48,62 @@ plt.savefig('sepal_width_hist.png')
 
 fig = plt.figure()
 plt.hist(iris_df['petal_length'])
-plt.xlabel('petal length')
+plt.xlabel('petal length in cm')
 plt.ylabel('Frequency')
 plt.savefig('petal_length_hist.png')
 
 fig = plt.figure()
 plt.hist(iris_df['petal_width'])
-plt.xlabel('petal width')
+plt.xlabel('petal width in cm')
 plt.ylabel('Frequency')
 plt.savefig('petal_width_hist.png')
 
 fig = plt.figure()
 plt.hist(iris_df['petal_width'])
-plt.xlabel('petal width')
+plt.xlabel('petal width in cm')
 plt.ylabel('Frequency')
 plt.savefig('petal_width_hist.png')
 
 #histogram of each variable differentiation each species
 fig = sns.FacetGrid(iris_df,hue='species',height=5).map(sns.distplot,'sepal_length', kde=False).add_legend()
+fig.set(xlabel='sepal length in cm', ylabel='Frequency')
 fig.savefig('sepal_length_snshist.png')
 
 fig = sns.FacetGrid(iris_df,hue='species',height=5).map(sns.distplot,'sepal_width', kde=False).add_legend()
+fig.set(xlabel='sepal width in cm', ylabel='Frequency')
 fig.savefig('sepal_width_snshist.png')
 
 fig = sns.FacetGrid(iris_df,hue='species',height=5).map(sns.distplot,'petal_length', kde=False).add_legend()
+fig.set(xlabel='petal length in cm', ylabel='Frequency')
 fig.savefig('petal_length_snshist.png')
 
 fig = sns.FacetGrid(iris_df,hue='species',height=5).map(sns.distplot,'petal_width', kde=False).add_legend()
+fig.set(xlabel='petal width in cm', ylabel='Frequency')
 fig.savefig('petal_width_snshist.png')
 
 #scatter plot each pair while diffentiating based on species
 fig = sns.FacetGrid(iris_df,hue='species',height=5).map(plt.scatter,'sepal_length','sepal_width').add_legend()
+fig.set(xlabel='sepal length in cm', ylabel='sepal width in cm')
 fig.savefig('sepal_length_vs_sepal_width.png')
 
 fig = sns.FacetGrid(iris_df,hue='species',height=5).map(plt.scatter,'sepal_length','petal_length').add_legend()
+fig.set(xlabel='sepal length in cm', ylabel='petal length in cm')
 fig.savefig('sepal_length_vs_petal_length.png')
 
 fig = sns.FacetGrid(iris_df,hue='species',height=5).map(plt.scatter,'sepal_length','petal_width').add_legend()
+fig.set(xlabel='sepal length in cm', ylabel='petal width in cm')
 fig.savefig('sepal_length_vs_petal_width.png')
 
 fig = sns.FacetGrid(iris_df,hue='species',height=5).map(plt.scatter,'sepal_width','petal_length').add_legend()
+fig.set(xlabel='sepal width in cm', ylabel='petal length in cm')
 fig.savefig('sepal_width_vs_petal_length.png')
 
 fig = sns.FacetGrid(iris_df,hue='species',height=5).map(plt.scatter,'sepal_width','petal_width').add_legend()
+fig.set(xlabel='sepal width in cm', ylabel='petal width in cm')
 fig.savefig('sepal_width_vs_petal_width.png')
 
 fig = sns.FacetGrid(iris_df,hue='species',height=5).map(plt.scatter,'petal_length','petal_width').add_legend()
+fig.set(xlabel='petal length in cm', ylabel='petal width in cm')
 fig.savefig('petal_length_vs_petal_width.png')
 
 # Pair plot gives all possible combinations of x and y as scatter plot and histogram in one image
