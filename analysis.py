@@ -58,12 +58,6 @@ plt.xlabel('petal width in cm')
 plt.ylabel('Frequency')
 plt.savefig('petal_width_hist.png')
 
-fig = plt.figure()
-plt.hist(iris_df['petal_width'])
-plt.xlabel('petal width in cm')
-plt.ylabel('Frequency')
-plt.savefig('petal_width_hist.png')
-
 #histogram of each variable differentiation each species
 fig = sns.FacetGrid(iris_df,hue='species',height=5).map(sns.distplot,'sepal_length', kde=False).add_legend()
 fig.set(xlabel='sepal length in cm', ylabel='Frequency')
