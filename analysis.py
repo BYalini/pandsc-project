@@ -77,20 +77,6 @@ fig.savefig('petal_length_snshist.png')
 fig = sns.FacetGrid(iris_df,hue='species',height=5).map(sns.distplot,'petal_width', kde=False).add_legend()
 fig.savefig('petal_width_snshist.png')
 
-#histogram of each variable while differentiating each species
-fig = sns.FacetGrid(iris_df,hue='species',height=5).map(sns.distplot,'sepal_length', kde=False).add_legend()
-fig.savefig('sepal_length_snshist.png')
-
-fig = sns.FacetGrid(iris_df,hue='species',height=5).map(sns.distplot,'sepal_width', kde=False).add_legend()
-fig.savefig('sepal_width_snshist.png')
-
-fig = sns.FacetGrid(iris_df,hue='species',height=5).map(sns.distplot,'petal_length', kde=False).add_legend()
-fig.savefig('petal_length_snshist.png')
-
-fig = sns.FacetGrid(iris_df,hue='species',height=5).map(sns.distplot,'petal_width', kde=False).add_legend()
-fig.savefig('petal_width_snshist.png')
-
-
 #scatter plot each pair while diffentiating based on species
 fig = sns.FacetGrid(iris_df,hue='species',height=5).map(plt.scatter,'sepal_length','sepal_width').add_legend()
 fig.savefig('sepal_length_vs_sepal_width.png')
