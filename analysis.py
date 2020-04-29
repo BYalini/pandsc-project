@@ -21,15 +21,15 @@ with open('summary.txt', mode='w') as file_summary :
     print("Summary statistics: All species", file=file_summary)
     print(iris_df.describe(), file=file_summary)
     print("", file=file_summary)  # insert blank line
-    # select only the wrong with Iris-setosa species
+    # select only the rows with Iris-setosa species
     print('Summary statistics: Iris-setosa', file =file_summary)
     print(iris_df[iris_df['species'] == 'Iris-setosa'].describe(), file = file_summary)
     print("", file=file_summary)  # insert blank line
-    # select only the wrong with Iris-virginica species
+    # select only the rows with Iris-virginica species
     print('Summary statistics: Iris-virginica', file =file_summary)
     print(iris_df[iris_df['species'] == 'Iris-virginica'].describe(), file = file_summary)
     print("", file=file_summary)  # insert blank line
-    # select only the wrong with Iris-versicolor species
+    # select only the rows with Iris-versicolor species
     print('Summary statistics: Iris-versicolor', file =file_summary)
     print(iris_df[iris_df['species'] == 'Iris-versicolor'].describe(), file = file_summary)
     
